@@ -1,0 +1,73 @@
+/* Color Scheme 70s vibe */
+/* teal - #75c8ae
+  brown - #5a3d2b
+  beige - #ffecb4
+  orange - #e5771e
+  lightorange - #f4a127  
+*/
+
+/* how to animate a button being pressed for the track buttons */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffecb4;
+}
+
+h1 {
+    color: #e5771e;
+    font-family: Agbalumo, sans-serif;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 6rem;
+    letter-spacing: .3rem;
+}
+
+#edit-window {
+    display: flex;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    height: 25vh;
+    width: 50%;
+    margin: 3rem auto;
+}
+
+#track-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+.track {
+  height: 25%;
+  font-size: 2em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
+  outline: 2px solid rgb(252, 252, 252);
+  outline-offset: -4px;
+  background-color: #f4a127;
+  color:rgb(252, 252, 252); 
+  font-weight: bold;
+}
+
+.track:hover {
+    background-color: rgb(252, 252, 252);
+    color: #f4a127;
+    outline: 2px solid #f4a127;
+    outline-offset: -4px;
+    border: 2px solid rgb(252, 252, 252);
+}
+
+.track:nth-of-type(1) {
+    border-top-left-radius: 10px;
+}
+
+.track:nth-of-type(4) {
+    border-bottom-left-radius: 10px;
+}
